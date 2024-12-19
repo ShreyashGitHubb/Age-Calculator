@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Age Calculator</h1>
+        <button id="theme-toggle">Switch to Dark Mode</button>
+    </header>
+    <div class="container">
+        <form id="age-form">
+            <label for="dob">Enter Your Date of Birth:</label>
+            <input type="date" id="dob" required>
+            <button type="submit">Calculate Age</button>
+        </form>
+        <div id="result">
+            <div id="live-age"></div>
+            <div id="countdown"></div>
+            <div id="detailed-result"></div>
+            <div id="fun-facts"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

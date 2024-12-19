@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#theme-toggle {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+input[type="date"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result div {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1e1e2f;
+    color: #e4e4e4;
+}
+
+header.dark-mode {
+    background-color: #333;
+    color: #e4e4e4;
+}
+
+.container.dark-mode {
+    background-color: #2b2b3d;
+    color: #e4e4e4;
+}
+
+#result div.dark-mode {
+    background-color: #333;
+    border: 1px solid #444;
+}
